@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/textq1"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/test2"
+            android:cropToPadding="false" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativMulaiQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5090D5"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="Start Quiz"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativLearnSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#36B3C6"
+        android:layout_below="@id/relativMulaiQuiz"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/baloo"
+            android:text="Learn Session"
+            android:textColor="#fff"
+            android:textSize="35dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/judul"
+        android:layout_toRightOf="@id/relativMulaiQuiz"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:background="@drawable/lbtn" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

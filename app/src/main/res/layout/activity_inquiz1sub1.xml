@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/pacifico"
+            android:text="Story of prophet"
+            android:textSize="35dp"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativcanvasgame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shapeblackcorner"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/realtivpertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:id="@+id/scroll_text_pertanyaan"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/text_pertanyaan"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="at what age Muhammad (shallallu alaihi wasalam) was sent to be a prophet?"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/garis_txt_pertanyaan"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff"
+                android:layout_below="@+id/scroll_text_pertanyaan"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollpertanyaanquiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/realtivpertanyaan"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/pertanyaanpertama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapewhitecorner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/txt_pertanyaanpertama"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:text="40 years old"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:background="#00ffffff"
+                        android:onClick="onClick"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pertanyaankedua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapewhitecorner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/txt_pertanyaankedua"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:text="42 years old"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:background="#00ffffff"
+                        android:onClick="onClick"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pertanyaanketiga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapewhitecorner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/txt_pertanyaanketiga"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:text="24 years old"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:background="#00ffffff"
+                        android:onClick="onClick"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/pertanyaankeempat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shapewhitecorner"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <Button
+                        android:id="@+id/txt_pertanyaankeempat"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:text="24 years old"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:background="#00ffffff"
+                        android:onClick="onClick"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            android:text="1"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

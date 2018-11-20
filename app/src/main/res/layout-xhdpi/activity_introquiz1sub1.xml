@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/judulintro1quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/pacifico"
+        android:text="Story of prophet"
+        android:textSize="35dp"
+        android:textColor="#000"/>
+
+    <RelativeLayout
+        android:id="@+id/introtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_below="@id/judulintro1quiz1"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“Prophet story is the important Leason for all of muslim, The life of prophet, how is the adab and akhlak of prophet, that is many thing that we can learn from The sirroh of prophet”"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/introtext"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+        <RelativeLayout
+            android:id="@+id/learnquiz1sub1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#db4742"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn Session"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/startquiz1sub1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/learnquiz1sub1"
+            android:background="#4092df"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Quiz"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

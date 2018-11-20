@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/testblack" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mq1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@id/g1mq"
+                android:layout_marginRight="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#000000"
+                android:onClick="btn_tomainquiz1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/baloo"
+                    android:text="Prophet Story"
+                    android:textColor="#fff"
+                    android:textSize="30dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/g1mq"
+                android:layout_width="2dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="#000" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mq2"
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/g2mq"
+                android:layout_marginLeft="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#000000"
+                android:onClick="btn_tomainquiz2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/baloo"
+                    android:text="Right Guide Caliph"
+                    android:textColor="#fff"
+                    android:textSize="30dp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/g2mq"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="#000" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

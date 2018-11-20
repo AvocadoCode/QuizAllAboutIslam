@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/pacifico"
+            android:text="Story of prophet"
+            android:textSize="30dp"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/containt_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/block1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/subquiz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="btn_tointroquiz1sub1">
+
+            <TextView
+                android:id="@+id/blacksquere1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="#000" />
+
+            <RelativeLayout
+                android:id="@+id/rsubquiznumber"
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/shapegreycorner"
+                android:layout_toRightOf="@id/blacksquere1" />
+
+            <RelativeLayout
+                android:id="@+id/subrquiztext1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_toRightOf="@id/blacksquere1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:text="Masa Kecil Nabi ﷺ"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/subquiz2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="btn_tointroquiz1sub2">
+
+            <TextView
+                android:id="@+id/blacksquere2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="#000"
+                android:layout_alignParentRight="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rsubquiznumber2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="#fff"
+                    android:textSize="40dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/shapegreycornerright"
+                android:layout_toLeftOf="@id/blacksquere2" />
+
+            <RelativeLayout
+                android:id="@+id/subrquiztext2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_toLeftOf="@id/blacksquere2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:text="Sebelum Nabi ﷺ diutus"
+                    android:textColor="#000"
+                    android:textSize="17dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
